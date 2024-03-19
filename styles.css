@@ -1,0 +1,332 @@
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0.1px;
+}
+#head{
+    height: 15%;
+    width: 100%;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+#head h2{
+    width:70%;
+    font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-size: 1.7rem;
+  font-style: normal;
+  color: #FF0000;
+}
+#nav{
+    position: static;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    border-bottom: 3px solid white;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.3);
+border-radius:0 0 16px 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18.9px);
+-webkit-backdrop-filter: blur(18.9px);
+border: 1px solid rgba(255, 255, 255, 0.37);
+}
+#logo{
+    
+    display: flex;
+    height: 100%;
+    width: 40%;
+    margin-left: 0.7em;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: cover;
+    object-position:center ;
+
+}
+#logo img{
+    height: 90%;
+    width: 45%;
+}
+#center{
+    padding-left: 1em;;
+}
+#center h1,sub{
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 2rem;
+    color:rgb(255, 16, 16);
+}
+
+#ele{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#ele a{
+    text-decoration: none;
+    color: black;
+    padding: 0.7em;
+}
+#ele button{
+    padding:0.7em 1em;
+    border-radius:0.7em;
+    box-shadow: 0.3em 0.3em 0 black;
+    transform: skewX(-15deg);
+
+    border:1px solid #FF0000;
+    background-color: white;
+}
+#ele button:hover{
+    background-color:  #FF0000; 
+    color: #f8f8f8;
+}
+#ele a:hover{
+    border: 0.1em solid #FF0000;
+    border-radius: 0.7em;
+    background-color: white;
+    border-bottom: 3px solid red;
+    transition:transform 300ms;
+}
+#upper{
+    height: auto;
+    width: 100%;
+   
+    
+}
+/* #upper img{
+    object-fit:fill;
+    object-position: contain;
+} */
+
+#upper-one{
+    height: 100%;
+    width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slideshow-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 10px;
+    
+  }
+  .slideshow-content {
+    display: none;
+    width: 100%;
+  }
+  
+  /* JavaScript will apply 'active' class to display the current slide */
+  .active {
+    display: block;
+  }
+  #sliding-text{
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: hidden;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    font-size: 4vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+#sliding-text1{
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: hidden;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    font-size: 4vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+  #text{
+    font-family: "Kurale", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+    white-space: nowrap; 
+  animation: scrolling-animation 10s linear infinite;
+  margin:3px;
+  
+  }
+  #sliding-text2{
+    width: 100%;
+    overflow: hidden;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    font-size: 6vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    z-index: -1;
+    position:absolute;
+    transform: skew(1deg,-45deg);
+    top:120%;
+    
+    
+}
+#sliding-text3{
+    width: 100%;
+    overflow: hidden;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    font-size: 6vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    z-index: -1;
+    position:absolute;
+    transform: skew(1deg,45deg);
+    top:120%;
+    
+}
+#page2{
+    height: 130vh;
+    width: 95vw;
+    overflow-x: hidden;
+}
+#page3{
+    height: 90vh;
+    width: 90vw;
+    overflow-x: hidden;
+   margin-left: 2.5em;
+}
+#page4{
+    height: 60vh;
+    width: 99vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+#person{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 70%;
+    border: 3px solid rgb(197, 193, 193);
+    border-radius: 10px;
+    padding: 1em;
+    gap: 1em;
+    box-shadow: 10px 10px 10px black;
+    margin:1em 0;
+}
+
+#person #info{
+    display: flex;
+    flex-direction: column;
+}
+#person img{
+    border-radius: 10px;
+}
+#info h1{
+    font-size:3vmax;
+}
+#person h3{
+    font-size: 2vmax;
+}
+
+@media only screen and (max-width: 640px) {
+    
+    #page4{ 
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+    }
+    #person{ 
+      flex: 80%; 
+    }
+  }
+
+  @keyframes scrolling-animation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); } 
+  }
+  @keyframes scrolling-animation1{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); } 
+  }
+@media (width<= 800px) {
+    #ele a{
+        display: None;
+    }
+}
+@media (width<= 690px) {
+    #head h2{
+        font-size: 1rem;
+        padding: 0%;
+    }
+    #logo img{
+        /* width: 70%; */
+        height: 60%;
+        width: 50%;
+    }
+    
+  }
+  #middle{
+    margin-top: 3vh;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #middle-ele{
+   
+    margin-left:1em;
+    width: 80%;
+
+  }
+  footer{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(226, 87, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tourney", sans-serif;
+    font-weight: 700;
+  
+  }
